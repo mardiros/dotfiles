@@ -1,0 +1,34 @@
+export EDITOR=/usr/bin/nvim
+export PATH="$HOME/bin:$PATH"
+export LANG=en_US.UTF-8
+export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning:pkgutil:186,ignore::DeprecationWarning:pyflakes.scripts.pyflakes,ignore::DeprecationWarning:nose.util:14,ignore::PendingDeprecationWarning:paste.request:131,ignore::PendingDeprecationWarning:django.views.generic.date_based:13,ignore::DeprecationWarning:rpdb2,ignore::DeprecationWarning:werkzeug.templates,ignore::ImportWarning:mercurial.demandimport,ignore::ImportWarning:aptsources.sourceslist,ignore::ImportWarning:gettext,ignore::ImportWarning:httplib,ignore::ImportWarning:optparse,ignore::ImportWarning:xmlrpclib'
+
+
+#Node
+# Prevent sudo
+#https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo-linux.md
+# export NPM_PACKAGES="$HOME/.npm-packages"
+# export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
+source /usr/share/nvm/init-nvm.sh
+
+
+# Unset manpath so we can inherit from /etc/manpath via the `manpath`
+# command
+unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+
+# Add global npm binaries to path.
+export PATH="${NPM_PACKAGES}/bin:$PATH"
+# Add local npm binaries to path.
+export PATH="./node_modules/.bin:$PATH"
+
+
+
+export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+export GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
+
+export EMAIL=guillaume@gandi.net
+export DEBEMAIL=guillaume@gandi.net
+export DEBFULLNAME="Guillaume Gauvrit"

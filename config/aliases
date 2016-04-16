@@ -1,0 +1,46 @@
+
+alias ls='ls --color=auto'
+alias grep='grep --color=always --exclude-dir=\*.svn\*'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias nose='nosetests -sxv'
+alias is='ssh -l root'
+
+alias git-clean='git pull --rebase && git pull --prune && git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias deb-clean='sudo rm -rf debian *.deb && sudo rm -rf build && git checkout debian'
+alias pyc-clean='find . -name "*.pyc" -exec rm -rf {} \;'
+
+alias potage='python setup.py develop && python setup.py extract_messages && python setup.py update_catalog && python setup.py compile_catalog'
+
+alias vi=/bin/nvim
+alias vim=/bin/nvim
+
+#alias fig='docker-compose'
+alias dc='docker-compose'
+alias docker-kill-all='docker kill $(docker ps -q)'
+alias docker-purge='docker rm $(docker ps -a -q)'
+alias docker-purge-i='docker rmi $(docker images -q -f dangling=true)'
+# alias docker-purge-all='docker rmi $(docker images -q)'
+alias docker-clean="docker-kill-all || true && docker-purge" 
+alias docker-stats="docker stats $(docker ps -q)"
+
+#alias docker-reset='sudo systemctl docker stop && cd /var/lib/docker && sudo btrfs subvolume delete $(sudo btrfs subvolume list /var/lib/docker | awk \'{print $9}\') && cd - && sudo rm -rf /var/lib/docker/* && sudo sysctemctl start docker'
+
+
+alias dotdeb-serve='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
+    --name "repository.aptly"\
+    -v ${HOME}/workspace/aptly/root:/root \
+    -p 8765:8765 \
+    mardiros/dotdeb \
+    aptly serve -listen=:8765'
+
+alias dotdeb='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
+    --link "repository.aptly:repository.aptly"\
+    -v ${HOME}/workspace/aptly/root:/root \
+    -v $(pwd):/mnt \
+    -v /dev/urandom:/dev/random \
+    -v ${HOME}/workspace/aptly/sources.list.d:/etc/apt/sources.list.d \
+    mardiros/dotdeb'
+
+alias dotdeb-publish='dotdeb aptly -architectures=amd64 repo add aptly-release *.deb || true && dotdeb aptly publish update wheezy'
+alias dotdeb-test='dotdev /bin/bash'

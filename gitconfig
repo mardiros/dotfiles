@@ -1,0 +1,35 @@
+[user]
+name = Guillaume Gauvrit
+email = guillaume@gauvr.it
+
+[color]
+branch = auto
+diff = auto
+interactive = auto
+status = auto
+grep = auto
+
+[alias]
+amend = commit  --amend -C HEAD 
+br = branch --list
+bra = branch --list -a
+branches = branch --list -a
+tags = tag --list  
+fixup = rebase -i --autosquash 
+glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+rollback = reset --soft HEAD^
+update = checkout
+st = status --short
+trash = reset --hard
+purge =  clean -fd
+wip = commit -am 'WIP'
+
+[core]
+editor = vim 
+excludesfile = ~/.gitignore
+
+#[branch]
+#autosetuprebase = always
+
+[push]
+default = simple
