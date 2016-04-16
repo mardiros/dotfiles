@@ -10,7 +10,7 @@ export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning:pkgu
 # export NPM_PACKAGES="$HOME/.npm-packages"
 # export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath`
