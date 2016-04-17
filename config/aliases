@@ -5,6 +5,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias nose='nosetests -sxv'
 alias is='ssh -l root'
+alias tmux="tmux -2"
 
 alias git-clean='git pull --rebase && git pull --prune && git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias deb-clean='sudo rm -rf debian *.deb && sudo rm -rf build && git checkout debian'

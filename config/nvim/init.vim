@@ -11,6 +11,12 @@ set dir=~/.vim/sessions
 set nobackup
 set noswapfile
 
+" 256 Colors
+set t_Co=256
+"let &t_AB="\e[48;5;%dm"
+"let &t_AF="\e[38;5;%dm"
+
+" encoding
 set encoding=utf-8
 set fileencoding=utf-8
 
