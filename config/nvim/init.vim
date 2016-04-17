@@ -35,6 +35,7 @@ noremap <C-w> :tabclose<CR>
 noremap <S-Tab> :tabprevious<CR>
 noremap <Tab> :tabnext<CR>
 noremap <C-k> :YcmCompleter GoToDefinition<CR>
+noremap <C-e> :NERDTreeToggle<CR>
 noremap <Home> :NERDTreeToggle<CR>
 
 call plug#begin('~/.config/nvim/plugged/')
