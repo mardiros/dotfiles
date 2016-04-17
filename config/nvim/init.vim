@@ -1,7 +1,19 @@
 set backspace=indent,eol,start
 set mouse-=a
 
-" set number
+set number
+
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+
+
 
 " Move Backup Files to ~/.nvim/sessions
 set backupdir=~/.local/share/nvim/swap
