@@ -48,11 +48,11 @@ def identical(src, target):
         with open(target) as ftarget:
             diff = difflib.ndiff(ftarget.readlines(), fsrc.readlines())
 
-            diff_header = True 
+            diff_header = True
             for idx, line in enumerate(diff):
                 if line.startswith(' '):
                     diff_header = True
-                    continue 
+                    continue
                 if diff_header:
                    diff_header = False
                    if ident:
