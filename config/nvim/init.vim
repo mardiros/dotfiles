@@ -44,6 +44,8 @@ Plug 'freeo/vim-kalisi'
 
 Plug 'hdima/python-syntax'
 
+Plug 'ctrlpvim/ctrlp.vim'
+
 Plug 'scrooloose/nerdtree'
 
 " Code to execute when the plugin is loaded on demand
@@ -53,7 +55,7 @@ autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable(
 call plug#end()
 
 set ruler
-set textwidth=72
+set textwidth=0
 set expandtab
 set shiftwidth=2
 set fileformat=unix
@@ -87,3 +89,4 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
