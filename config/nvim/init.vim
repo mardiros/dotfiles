@@ -1,5 +1,3 @@
-set backspace=indent,eol,start
-set mouse-=a
 
 set number
 
@@ -54,17 +52,22 @@ noremap <C-u> :split<CR>
 
 call plug#begin('~/.config/nvim/plugged/')
 
+Plug 'ctrlpvim/ctrlp.vim'
+
 Plug 'freeo/vim-kalisi'
 
 Plug 'hdima/python-syntax'
 
-Plug 'ctrlpvim/ctrlp.vim'
-
 Plug 'scrooloose/nerdtree'
+
+Plug 'tpope/vim-fugitive'
 
 " Code to execute when the plugin is loaded on demand
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
+
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
@@ -108,4 +111,19 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 
 " Ignore pyc files
 let NERDTreeIgnore = ['\.pyc$']
+
+
+set noshowmode
+
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+let g:airline_left_sep =  ' ' " '▶'
+let g:airline_right_sep = ' ' " '◀'
+let g:airline_symbols.branch = "\uf020"
+let g:airline_left_alt_sep = '|'
+let g:airline_right_alt_sep = '|'
+let g:airline_theme= 'jellybeans'
 
