@@ -89,4 +89,9 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 
+" Ignore files in .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" Ignore pyc files
+let NERDTreeIgnore = ['\.pyc$']
+
