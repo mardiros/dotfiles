@@ -52,8 +52,14 @@ autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable(
 
 call plug#end()
 
+set ruler
+set textwidth=72
 set expandtab
 set shiftwidth=2
+set fileformat=unix
+
+set splitbelow
+set splitright
 
 autocmd BufReadPre,BufNewFile * let b:did_ftplugin = 1
 filetype plugin on
