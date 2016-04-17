@@ -13,8 +13,6 @@ endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
 
-
-
 " Move Backup Files to ~/.nvim/sessions
 set backupdir=~/.local/share/nvim/swap
 set dir=~/.local/share/nvim/swap
@@ -42,13 +40,16 @@ set smartcase " dont ignore case when ucase
 
 cnoreabbr o tabedit
 
-"noremap <C-t> :tabnew<CR>
-noremap <C-w> :tabclose<CR>
+noremap <C-s> :w<CR>
+noremap <C-S> :wq<CR>
 noremap <S-Tab> :tabprevious<CR>
 noremap <Tab> :tabnext<CR>
 noremap <C-k> :YcmCompleter GoToDefinition<CR>
 noremap <C-e> :NERDTreeToggle<CR>
 noremap <Home> :NERDTreeToggle<CR>
+noremap <C-t> :tabnew<CR>
+noremap <C-y> :vertical split<CR>
+noremap <C-u> :split<CR>
 
 call plug#begin('~/.config/nvim/plugged/')
 
