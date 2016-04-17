@@ -30,18 +30,20 @@ set smartcase " dont ignore case when ucase
 
 cnoreabbr o tabedit
 
-noremap <C-t> :tabnew<CR>
+"noremap <C-t> :tabnew<CR>
 noremap <C-w> :tabclose<CR>
 noremap <S-Tab> :tabprevious<CR>
 noremap <Tab> :tabnext<CR>
 noremap <C-k> :YcmCompleter GoToDefinition<CR>
-noremap <C-E> :Explore<CR>
+noremap <Home> :NERDTreeToggle<CR>
 
 call plug#begin('~/.config/nvim/plugged/')
 
 Plug 'freeo/vim-kalisi'
 
 Plug 'hdima/python-syntax'
+
+Plug 'scrooloose/nerdtree'
 
 " Code to execute when the plugin is loaded on demand
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
