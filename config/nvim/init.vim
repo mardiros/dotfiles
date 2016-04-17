@@ -1,12 +1,11 @@
-set nocompatible
 set backspace=indent,eol,start
 set mouse-=a
 
 " set number
 
-" Move Backup Files to ~/.vim/sessions
-set backupdir=~/.vim/sessions
-set dir=~/.vim/sessions
+" Move Backup Files to ~/.nvim/sessions
+set backupdir=~/.local/share/nvim/swap
+set dir=~/.local/share/nvim/swap
 " and no backup
 set nobackup
 set noswapfile
@@ -29,24 +28,44 @@ set hlsearch "highlight
 set ignorecase
 set smartcase " dont ignore case when ucase
 
-map <C-t> :tabnew<CR>
-map <C-w> :tabclose<CR>
-map <F3> :tabprevious<CR>
-map <F4> :tabnext<CR>
-map <C-O> :Explore<CR>
+cnoreabbr o tabedit
 
+noremap <C-t> :tabnew<CR>
+noremap <C-w> :tabclose<CR>
+noremap <S-Tab> :tabprevious<CR>
+noremap <Tab> :tabnext<CR>
+noremap <C-k> :YcmCompleter GoToDefinition<CR>
+noremap <C-E> :Explore<CR>
+
+call plug#begin('~/.config/nvim/plugged/')
+
+Plug 'freeo/vim-kalisi'
+
+Plug 'hdima/python-syntax'
+
+" Code to execute when the plugin is loaded on demand
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
+
+call plug#end()
+
+set expandtab
+set shiftwidth=2
+
+autocmd BufReadPre,BufNewFile * let b:did_ftplugin = 1
 filetype plugin on
 syntax on
-colorscheme desert
+colorscheme kalisi
+set background=dark
 
 au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=8
 
 " What to use for an indent.
 " This will affect Ctrl-T and 'autoindent'.
 " Python: 4 spaces
-" au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
-" au BufRead,BufNewFile *.py,*.pyw set expandtab
-" au BufRead,BufNewFile Makefile* set noexpandtab
+au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
+
+au BufRead,BufNewFile Makefile* set noexpandtab
 
 au FileType python setlocal ts=4 sw=4 sts=4 et
 
@@ -59,5 +78,3 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 
-let python_highlight_all=1
-let g:pydiction_location = '~/.vim/complete-dict'
