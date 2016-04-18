@@ -6,10 +6,9 @@ SAVEHIST=1000
 bindkey -v
 
 bindkey '\e[1~' beginning-of-line
+bindkey '\e[2~' end-of-line
 bindkey '\e[3~' delete-char
-bindkey '\e[4~' end-of-line
 bindkey '\177' backward-delete-char
-bindkey '\e[2~' overwrite-mode
 
 bindkey "\e[7~" beginning-of-line
 bindkey "\e[H" beginning-of-line
