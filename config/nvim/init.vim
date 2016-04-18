@@ -40,7 +40,6 @@ set smartcase " dont ignore case when ucase
 cnoreabbr o tabedit
 
 noremap <C-s> :w<CR>
-noremap <C-S> :wq<CR>
 noremap <S-Tab> :tabprevious<CR>
 noremap <Tab> :tabnext<CR>
 noremap <C-k> :YcmCompleter GoToDefinition<CR>
