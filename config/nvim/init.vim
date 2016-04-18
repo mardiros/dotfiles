@@ -44,7 +44,6 @@ noremap <S-Tab> :tabprevious<CR>
 noremap <Tab> :tabnext<CR>
 noremap <C-k> :YcmCompleter GoToDefinition<CR>
 noremap <C-e> :NERDTreeToggle<CR>
-noremap <Home> :NERDTreeToggle<CR>
 noremap <C-t> :tabnew<CR>
 noremap <C-y> :vertical split<CR>
 noremap <C-u> :split<CR>
