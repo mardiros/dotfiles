@@ -34,6 +34,7 @@ import os
 import os.path
 import shutil
 import sys
+import time
 
 sep = os.path.sep
 curfile = os.path.abspath(__file__)
@@ -102,7 +103,15 @@ def main(dry_run, verbose):
              target = sep.join([prefix + src])
              src = root + src
              if os.path.exists(target):
-                 ident, diff = identical(src, target)
+                 if verbose:
+                     print('Comparing files {} {}'.format(src, target))
+                 try:
+                     ident, diff = identical(src, target)
+                 except UnicodeDecodeError:
+                     diff = '[binary files]'
+                     src_time = time.ctime(os.path.getmtime(src))
+                     target_time = time.ctime(os.path.getmtime(target))
+                     ident = src_time == target_time
                  if ident:
                      if verbose:
                          print('Ignoring identical file {}'.format(target))
@@ -113,7 +122,7 @@ def main(dry_run, verbose):
              else:
                  print('Copying {} to {}'.format(src, target))
              if not dry_run:
-                 shutil.copyfile(src, target)
+                 shutil.copy2(src, target)
 
 
 if __name__ == '__main__':
