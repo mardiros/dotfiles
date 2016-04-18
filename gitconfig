@@ -25,7 +25,7 @@ purge =  clean -fd
 wip = commit -am 'WIP'
 
 [core]
-editor = vim 
+editor = /usr/bin/nvim
 excludesfile = ~/.gitignore
 
 #[branch]
