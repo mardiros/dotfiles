@@ -47,6 +47,7 @@ noremap <C-e> :NERDTreeToggle<CR>
 noremap <C-t> :tabnew<CR>
 noremap <C-y> :vertical split<CR>
 noremap <C-u> :split<CR>
+noremap <S-u> :redo<CR>
 
 call plug#begin('~/.config/nvim/plugged/')
 
@@ -69,6 +70,7 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+set scrolloff=7
 set ruler
 set textwidth=0
 set expandtab
