@@ -25,7 +25,7 @@ alias docker-purge='docker rm $(docker ps -a -q)'
 alias docker-purge-i='docker rmi $(docker images -q -f dangling=true)'
 # alias docker-purge-all='docker rmi $(docker images -q)'
 alias docker-clean="docker-kill-all || true && docker-purge" 
-alias docker-stats="docker stats $(docker ps -q)"
+alias docker-stats='docker stats $(docker ps -q)'
 
 #alias docker-reset='sudo systemctl docker stop && cd /var/lib/docker && sudo btrfs subvolume delete $(sudo btrfs subvolume list /var/lib/docker | awk \'{print $9}\') && cd - && sudo rm -rf /var/lib/docker/* && sudo sysctemctl start docker'
 
