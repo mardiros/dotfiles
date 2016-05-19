@@ -49,6 +49,9 @@ noremap <C-y> :vertical split<CR>
 noremap <C-u> :split<CR>
 noremap <S-u> :redo<CR>
 
+" Never enter in replace mode
+imap <Insert> <Nop>
+
 call plug#begin('~/.config/nvim/plugged/')
 
 Plug 'ctrlpvim/ctrlp.vim'
