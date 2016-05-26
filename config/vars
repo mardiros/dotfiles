@@ -4,7 +4,11 @@ export LANG=en_US.UTF-8
 export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning:pkgutil:186,ignore::DeprecationWarning:pyflakes.scripts.pyflakes,ignore::DeprecationWarning:nose.util:14,ignore::PendingDeprecationWarning:paste.request:131,ignore::PendingDeprecationWarning:django.views.generic.date_based:13,ignore::DeprecationWarning:rpdb2,ignore::DeprecationWarning:werkzeug.templates,ignore::ImportWarning:mercurial.demandimport,ignore::ImportWarning:aptsources.sourceslist,ignore::ImportWarning:gettext,ignore::ImportWarning:httplib,ignore::ImportWarning:optparse,ignore::ImportWarning:xmlrpclib'
 
 
-#Node
+# Go
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin
+
+# Node
 # Prevent sudo
 #https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo-linux.md
 # export NPM_PACKAGES="$HOME/.npm-packages"
