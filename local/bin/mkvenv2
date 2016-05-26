@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+WORKINGDIR=$(pwd)
+VENVDIR="$HOME/workspace/venv"
+PYVERSION="py2"
+PROJECT=$1
+[[ $PROJECT == "" ]] && PROJECT=$(basename $(pwd))
+
+VENVNAME="$PROJECT-$PYVERSION"
+VENV="$VENVDIR/$VENVNAME"
+
+virtualenv2 $VENV
+
+.  $VENV/bin/activate
+pip install -U setuptools pip
+ln -s $VENV $WORKINGDIR/venv2
