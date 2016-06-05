@@ -37,6 +37,8 @@ set hlsearch "highlight
 set ignorecase
 set smartcase " dont ignore case when ucase
 
+set tabstop=2 
+
 cnoreabbr o tabedit
 
 noremap <C-s> :w<CR>
@@ -89,7 +91,7 @@ syntax on
 colorscheme kalisi
 set background=dark
 
-au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=8
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set tabstop=8
 
 " What to use for an indent.
 " This will affect Ctrl-T and 'autoindent'.
@@ -108,6 +110,9 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
+
+au BufRead,BufNewFile *.go set tabstop=2
+au BufRead,BufNewFile *.go set noexpandtab
 
 " Ignore files in .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
