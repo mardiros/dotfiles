@@ -28,6 +28,9 @@ wip = commit -am 'WIP'
 editor = /usr/bin/nvim
 excludesfile = ~/.gitignore
 
+[diff]
+compactionHeuristic = 1
+
 #[branch]
 #autosetuprebase = always
 
