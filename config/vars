@@ -11,6 +11,10 @@ export PATH=$PATH:~/go/bin
 # Node
 [ -e /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh
 
+#
+[ -e "$HOME/workspace/git/scripts" ] && export PATH="$PATH:$HOME/workspace/git/scripts"
+
+
 export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 export GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
 
