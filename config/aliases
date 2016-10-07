@@ -29,6 +29,13 @@ alias docker-stats='docker stats $(docker ps -q)'
 
 alias docker-reset='sudo systemctl stop docker && cd /var/lib/docker && sudo btrfs subvolume delete $(sudo btrfs subvolume list /var/lib/docker | awk '"'"'{print $9}'"'"') && cd - && sudo rm -rf /var/lib/docker/* && sudo systemctl start docker'
 
+function dc-respawn() {
+  for container in $@; do
+    dc kill $container && dc rm -f $container && dc up -d $container
+  done
+}
+
+
 alias dotdeb-serve='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
     --name "repository.aptly"\
     -v ${HOME}/workspace/aptly/root:/root \
