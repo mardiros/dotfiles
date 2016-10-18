@@ -37,7 +37,9 @@ set hlsearch "highlight
 set ignorecase
 set smartcase " dont ignore case when ucase
 
-set tabstop=2 
+set mouse-=a
+
+set tabstop=2
 
 cnoreabbr o tabedit
 
