@@ -12,5 +12,5 @@ VENV="$VENVDIR/$VENVNAME"
 virtualenv2 $VENV
 
 .  $VENV/bin/activate
-pip install -U setuptools pip
+pip install -U setuptools pip pep8 pylint
 ln -s $VENV $WORKINGDIR/venv2
