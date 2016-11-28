@@ -19,7 +19,7 @@ alias vim=/bin/nvim
 
 #alias fig='docker-compose'
 alias dc='docker-compose'
-alias dc-images="egrep '^[a-z]+.*:' docker-compose.yml | awk -F':' '{print \$1}' | sort"
+alias dc-images='dc config --services | sort'
 alias docker-kill-all='docker kill $(docker ps -q)'
 alias docker-purge='docker rm $(docker ps -a -q)'
 alias docker-purge-i='docker rmi $(docker images -q -f dangling=true)'
