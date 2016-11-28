@@ -53,3 +53,14 @@ alias dotdeb='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
     mardiros/dotdeb'
 
 alias dotdeb-publish='dotdeb aptly -architectures=amd64 repo add aptly-release *.deb || true && dotdeb aptly publish update wheezy'
+
+
+function dive() {
+  . ./venv2/bin/activate
+}
+
+function dive3() {
+  . ./venv3/bin/activate
+}
+
+
