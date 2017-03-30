@@ -1,2 +1,2 @@
 [MESSAGES CONTROL]
-disable=R,C,I,W0703
+disable=R,C,I,W0703,W0511
