@@ -3,7 +3,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=always --exclude-dir=\*.svn\*'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias nose='nosetests -sxv'
+alias nose='nosetests -sxv --with-doctest'
 alias is='ssh -l root'
 alias tmux="tmux -2"
 
