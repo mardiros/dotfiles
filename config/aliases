@@ -1,4 +1,4 @@
-
+alias watch='watch '
 alias ls='ls --color=auto'
 alias grep='grep --color=always --exclude-dir=\*.svn\*'
 alias fgrep='fgrep --color=auto'
