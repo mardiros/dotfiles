@@ -46,7 +46,7 @@ cnoreabbr o tabedit
 noremap <C-s> :w<CR>
 noremap <S-Tab> :tabprevious<CR>
 noremap <Tab> :tabnext<CR>
-noremap <C-k> :YcmCompleter GoToDefinition<CR>
+"noremap <C-k> :YcmCompleter GoToDefinition<CR>
 noremap <C-e> :NERDTreeToggle<CR>
 noremap <C-t> :tabnew<CR>
 noremap <C-y> :vertical split<CR>
@@ -69,8 +69,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 
 " Code to execute when the plugin is loaded on demand
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+"autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
 
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
