@@ -43,7 +43,6 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# change focus
 #bindsym $mod+j focus left
 #bindsym $mod+k focus down
 #bindsym $mod+l focus up
@@ -52,19 +51,25 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+l exec ~/.config/i3/screenlock.sh
 bindsym $mod+Shift+l exec ~/.config/i3/suspend.sh
 
-# alternatively, you can use the cursor keys:
+# change focus
 bindsym $mod+Left focus left
 bindsym $mod+Prior focus left 
+bindsym Mod1+Shift+Tab focus left
 bindsym $mod+Right focus right
 bindsym $mod+Next focus right 
+bindsym Mod1+Tab focus right
+
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+bracketleft move left
+bindsym $mod+bracketright move right
+
+#bindsym $mod+Shift+j move left
+#bindsym $mod+Shift+k move down
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+semicolon move right
 
 ## alternatively, you can use the cursor keys:
 #bindsym $mod+Shift+Left move left
@@ -97,9 +102,6 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 workspace_layout tabbed
-
-bindsym Mod1+Tab focus right 
-bindsym Mod1+Shift+Tab focus left 
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
