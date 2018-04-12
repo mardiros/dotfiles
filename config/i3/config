@@ -65,6 +65,9 @@ bindsym Mod1+Tab focus right
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 
+bindsym $mod+Tab exec /home/guillaume/.cargo/bin/i3switcher next
+bindsym $mod+Shift+Tab exec /home/guillaume/.cargo/bin/i3switcher prev
+
 # move focused window
 bindsym $mod+bracketleft move left
 bindsym $mod+bracketright move right
