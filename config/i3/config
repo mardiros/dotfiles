@@ -203,6 +203,7 @@ bar {
         status_command i3status
 }
 
+exec --no-startup-id redshift-gtk 
 exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
 exec --no-startup-id ~/.config/i3/ssh-agent.sh
