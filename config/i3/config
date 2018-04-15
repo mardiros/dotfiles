@@ -18,7 +18,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-font pango:DejaVu Sans 8
+font pango:DejaVu Sans 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -201,13 +201,8 @@ bindsym $mod+r mode "resize"
 bar {
         position top
         status_command i3status
+        font pango: DejaVu 20px
 }
 
-exec --no-startup-id redshift-gtk 
-exec --no-startup-id nm-applet
-exec --no-startup-id pa-applet
 exec --no-startup-id ~/.config/i3/ssh-agent.sh
-
-
-#assign [class="Firefox"] $ws1
-
+exec --no-startup-id ~/.config/i3/start-systray-app.sh
