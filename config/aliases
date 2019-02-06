@@ -11,6 +11,10 @@ alias git-clean='git pull --rebase && git pull --prune && git branch --merged | 
 alias git-branch='echo ''${$(git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD)#(refs/heads/|tags/)}'''
 alias git-open-mr='git push -u origin $(git-branch)'
 
+function git-co() {
+  git branch | grep --color=never $1 | xargs git checkout
+}
+
 alias deb-clean='sudo rm -rf debian *.deb && sudo rm -rf build && git checkout debian'
 alias pyc-clean='find . -name "*.pyc" -exec rm -rf {} \;'
 alias fix-ssh-agent='eval $(gnome-keyring-daemon -r) && export SSH_AUTH_SOCK && export GNOME_KEYRING_CONTROL'
