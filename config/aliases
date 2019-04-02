@@ -11,6 +11,10 @@ alias git-clean='git pull --rebase && git pull --prune && git branch --merged | 
 alias git-branch='echo ''${$(git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD)#(refs/heads/|tags/)}'''
 alias git-open-mr='git push -u origin $(git-branch)'
 
+function git-black() {
+  git status --short | grep --color=never '.py$' | awk '{print $2}' | xargs black -S -l79
+}
+
 function git-co() {
   git branch | grep --color=never $1 | xargs git checkout
 }

@@ -9,7 +9,7 @@ PROJECT=$1
 VENVNAME="$PROJECT-$PYVERSION"
 VENV="$VENVDIR/$VENVNAME"
 
-pyvenv $VENVDIR/$VENVNAME
+python -m venv $VENVDIR/$VENVNAME
 
 .  $VENV/bin/activate
 pip install -U setuptools pip pycodestyle pydocstyle pylint black
