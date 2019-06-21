@@ -67,11 +67,15 @@ alias dotdeb-publish='dotdeb aptly -architectures=amd64 repo add aptly-release *
 
 
 function dive() {
-  . ./venv2/bin/activate
+  dive3 || dive2
+}
+
+function dive2() {
+  [[ -e ./venv2 ]] && . ./venv2/bin/activate
 }
 
 function dive3() {
-  . ./venv3/bin/activate
+  [[ -e ./venv3 ]] && . ./venv3/bin/activate
 }
 
 alias divec='dive && code .'
