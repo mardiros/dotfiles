@@ -12,5 +12,5 @@ VENV="$VENVDIR/$VENVNAME"
 virtualenv2 $VENV
 
 .  $VENV/bin/activate
-pip install -U setuptools pip pycodestyle pydocstyle "pylint<2"
+pip install -U setuptools pip pycodestyle "pylint<2" pydocstyle doc8
 ln -s $VENV $WORKINGDIR/venv2
