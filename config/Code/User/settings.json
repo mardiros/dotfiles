@@ -20,5 +20,7 @@
     "window.zoomLevel": 0,
     "extensions.ignoreRecommendations": true,
     "workbench.startupEditor": "newUntitledFile",
-    "autoDocstring.docstringFormat": "sphinx"
+    "autoDocstring.docstringFormat": "sphinx",
+    "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true
 }
