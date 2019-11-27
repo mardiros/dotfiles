@@ -52,6 +52,13 @@ function dc-respawn() {
   dc logs -f $@
 }
 
+function dc-ip() {
+  for container in $@; do
+    echo -n "$container: "
+    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$(basename $(pwd))_${container}_1"
+  done
+}
+
 
 alias dotdeb-serve='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
     --name "repository.aptly"\
