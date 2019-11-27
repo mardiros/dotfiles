@@ -22,5 +22,8 @@
     "workbench.startupEditor": "newUntitledFile",
     "autoDocstring.docstringFormat": "sphinx",
     "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
