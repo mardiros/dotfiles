@@ -15,6 +15,10 @@ function git-black() {
   git status --short | grep --color=never '.py$' | awk '{print $2}' | xargs black -S -l79
 }
 
+function git-black-master() {
+  git diff --name-only  master | grep --color=never '.py$' | xargs black -S -l79
+}
+
 function git-co() {
   git branch | grep --color=never $1 | xargs git checkout
 }
