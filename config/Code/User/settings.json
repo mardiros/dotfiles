@@ -6,8 +6,8 @@
         "**/__pycache__": true
     },
     "editor.rulers": [72, 79, 120],
-    "python.linting.pep8Path": "pycodestyle",
-    "python.linting.pep8Enabled":  true,
+    "python.linting.pycodestylePath": "pycodestyle",
+    "python.linting.pycodestyleEnabled":  true,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintCategorySeverity.convention": "Information",
     "python.linting.pylintCategorySeverity.refactor": "Hint",
@@ -24,6 +24,9 @@
     "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
     "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
