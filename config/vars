@@ -16,8 +16,6 @@ export PATH=$PATH:~/go/bin
 
 #
 [ -e "$HOME/workspace/git/scripts" ] && export PATH="$PATH:$HOME/workspace/git/scripts"
-[ -e "$HOME/workspace/git/gandi-docker-stack" ]  && export PATH="$PATH:$HOME/workspace/git/gandi-docker-stack/bin"
-
 
 export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 export GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
