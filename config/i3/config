@@ -204,5 +204,8 @@ bar {
         font pango: DejaVu 20px
 }
 
+bindsym Print exec "gnome-screenshot --interactive"
+
+exec --no-startup-id feh --bg-scale ~/.config/i3/arch-linux_wallpaper.jpg
 exec --no-startup-id ~/.config/i3/ssh-agent.sh
 exec --no-startup-id ~/.config/i3/start-systray-app.sh
