@@ -38,7 +38,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 . ~/.config/vars
 
 PS1='%B%{$fg[green]%}%n%{$reset_color%}:%B%{$fg[blue]%}%~%{$reset_color%} $(git_prompt_string)%{$fg[green]%} 𝝿 %{$reset_color%}'
-
+eval "$(starship init zsh)"
 
 # source ~/.ssh-reagent
 # ssh-reagent
