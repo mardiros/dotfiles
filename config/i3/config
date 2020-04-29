@@ -52,7 +52,7 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 #bindsym $mod+semicolon focus right
 
 bindsym $mod+l exec ~/.config/i3/screenlock.sh
-bindsym $mod+Shift+l exec ~/.config/i3/suspend.sh
+bindsym $mod+Mod1+l exec ~/.config/i3/suspend.sh
 
 # change focus
 bindsym $mod+Left focus left
@@ -72,10 +72,10 @@ bindsym $mod+Shift+Tab exec /home/guillaume/.cargo/bin/i3switcher prev
 bindsym $mod+bracketleft move left
 bindsym $mod+bracketright move right
 
-#bindsym $mod+Shift+j move left
-#bindsym $mod+Shift+k move down
-#bindsym $mod+Shift+l move up
-#bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
 
 ## alternatively, you can use the cursor keys:
 #bindsym $mod+Shift+Left move left
