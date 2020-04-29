@@ -1,0 +1,40 @@
+set realname = "Guillaume Gauvrit"
+set from = "Guilaume Gauvrit <guillaume@gandi.net>"
+my_hdr From: Guillaume Gauvrit <guillaume@gandi.net>
+
+alternates ^guillaume@gandi\.net$
+
+#set mbox_type = maildir
+#set folder = ~/Mail
+#set record = "~/Mail/Sent"
+#set postponed = "~/Mail/Drafts"
+
+set pager_index_lines = 16
+
+# Compose
+set edit_hdrs
+set editor		= "nvim + -c 'set ft=mail tw=72 spell spelllang=en,fr'"
+set abort_nosubject	= yes
+set abort_unmodified	= yes
+set confirmappend 	= no		#
+set mime_forward	= yes		# Forward in body
+set include				# always include messages when replying
+
+#set locale="en_US.UTF-8"
+set charset="utf-8"     # character set for your terminal
+set assumed_charset="utf-8"
+set send_charset="utf-8:iso-8859-15:us-ascii"
+
+set alias_file= ~/.config/neomutt/aliases
+set sort_alias= alias
+set reverse_alias=yes
+
+set sort = threads
+
+source gpg.rc
+source passwords
+source colors
+source smtp
+source imap
+#source mailboxes
+source $alias_file

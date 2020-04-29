@@ -78,6 +78,8 @@ alias dotdeb='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
 
 alias dotdeb-publish='dotdeb aptly -architectures=amd64 repo add aptly-release *.deb || true && dotdeb aptly publish update wheezy'
 
+alias neomutt-dark='ln -s ~/.config/neomutt/color.dark ~/.config/neomutt/color && neomutt'
+alias neomutt-light='ln -s ~/.config/neomutt/color.light ~/.config/neomutt/color && neomutt'
 
 function dive() {
   dive3 || dive2

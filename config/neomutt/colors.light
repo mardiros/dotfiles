@@ -1,0 +1,63 @@
+#
+# .mutt/colors - Martin Pieuchot
+#   http://nolizard.org
+#
+# vim:ft=muttrc:
+
+# General		forground	background
+#color normal    white   brightwhite
+color status		brightwhite		yellow
+color indicator		brightwhite		green
+color error		black	red
+
+# Index
+color index		black	brightwhite	'~N'		 # new
+color index		blue		brightwhite	'~P'		 # from me
+color index		green		brightwhite	'~Q'		 # replied
+color index		red		brightwhite	'~D'		 # deleted
+color index		brightred	brightwhite	'~F'		 # flagged
+#color index		brightcyan	brightwhite	'~G'		 # PGP
+#color index		cyan		brightwhite	'~p'		 # to myself
+color index 		brightyellow	brightwhite	'~N ~z 1048576-' # big message
+color index 		yellow		brightwhite	'!~N ~z 1048576-'# -> (1M)
+
+
+
+# Pager (vim's peachpuff theme) 
+color hdrdefault	green	default
+color header		cyan	brightwhite '^Date:'
+color header		yellow	brightwhite '^Subject:'
+color header		yellow	brightwhite '^In-Reply-To:'
+
+
+# Body
+color attachment	yellow		brightwhite
+
+color quoted		blue 	brightwhite
+color quoted1		green	brightwhite
+color quoted2		magenta	brightwhite
+color quoted3		yellow	brightwhite
+color quoted4		cyan 	brightwhite
+color quoted5		red	brightwhite
+
+# email & user@
+color body 	magenta		brightwhite '[-.+_a-z0-9]+@([a-z0-9][a-z0-9.-]+)?'
+# URL
+color body 	red		brightwhite '[a-z][a-z0-9+-]*://[^ ]+'
+# bold
+color body	brightred	brightwhite '( |^)[*][^*]+[*]( |$)'
+# underline 
+color body	brightred	brightwhite '( |^)[_][^_]+[_]( |$)'
+# citations
+color body	cyan		brightwhite '( |^)[«][^»]+[»]( |$)'
+color body	cyan		brightwhite '( |^)["][^"]+["]( |$)'
+# inline commandline
+color body	cyan		brightwhite '^[$#].*$'
+# man(1)
+color body	black	brightwhite '[a-z0-9]+\([1-9]\)'
+
+# diff -u (vim's peachpuff theme)
+color body	green		brightwhite '^(Index: |\+\+\+ |--- |diff ).*$' 
+color body	yellow		brightwhite '^@@[^@]+@@' 
+color body	magenta		brightwhite '^-.*$' 
+color body	cyan		brightwhite '^\+.*$' 
