@@ -4,8 +4,6 @@ scrolling:
   # Specifying '0' will disable scrolling.
   history: 0
 
-tabspaces: 4
-
 font:
   # The normal (roman) font face to use.
   normal:
