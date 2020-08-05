@@ -7,7 +7,9 @@ scrolling:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Cascadia Code 
+    family: Cascadia Code
+    #family: Droid Sans Mono Slashed for Powerline
+    #family: Powerline
     #family: Noto Sans Mono Medium
     # Style can be specified to pick a specific face.
     style: Regular
@@ -157,7 +159,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
