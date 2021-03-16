@@ -200,8 +200,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         position top
-        status_command i3status
-        font pango: DejaVu 20px
+        status_command i3status --config ~/.config/i3/i3status.conf
+        font pango: DejaVu 9
 }
 
 bindsym Print exec "gnome-screenshot --interactive"
