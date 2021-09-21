@@ -13,10 +13,12 @@ alias git-branch='echo ''${$(git symbolic-ref -q HEAD || git name-rev --name-onl
 alias git-open-mr='git push -u origin $(git-branch)'
 
 function git-black() {
+  git status --short | grep --color=never '.py$' | awk '{print $2}' | xargs isort
   git status --short | grep --color=never '.py$' | awk '{print $2}' | xargs black
 }
 
 function git-black-master() {
+  git diff --name-only  master | grep --color=never '.py$' | xargs isort
   git diff --name-only  master | grep --color=never '.py$' | xargs black
 }
 
