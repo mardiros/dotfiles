@@ -36,8 +36,8 @@ alias pyclean='find . -name "*.pyc" -delete'
 alias vi=/bin/nvim
 alias vim=/bin/nvim
 
-#alias fig='docker-compose'
-alias dc='docker-compose'
+alias docker-compose='docker compose'
+alias dc='docker compose'
 alias dc-images='dc config --services | sort'
 alias docker-kill-all='docker kill $(docker ps -q)'
 alias docker-purge='docker rm $(docker ps -a -q)'
