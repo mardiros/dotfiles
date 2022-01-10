@@ -50,7 +50,7 @@ alias docker-reset='sudo systemctl stop docker && cd /var/lib/docker && sudo btr
 
 function dc-respawn() {
   for container in $@; do
-    dc kill $container && dc rm -f $container && dc up -d $container
+    dc stop $container && dc rm -f $container && dc up -d $container
   done
   dc logs -f $@
 }
