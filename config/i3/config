@@ -161,6 +161,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 bindsym $mod+F1 exec ~/.config/i3/xrandr-laptop.sh
 bindsym $mod+F2 exec ~/.config/i3/xrandr-desktop.sh
 bindsym $mod+F3 exec ~/.config/i3/xrandr-starleaf.sh
+bindsym $mod+F4 exec ~/.config/i3/xrandr-yanis-room.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
