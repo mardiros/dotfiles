@@ -53,6 +53,7 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 bindsym $mod+l exec ~/.config/i3/screenlock.sh
 bindsym $mod+Mod1+l exec ~/.config/i3/suspend.sh
+bindsym $mod+Mod1+h exec ~/.config/i3/hibernate.sh
 
 # change focus
 bindsym $mod+Left focus left
