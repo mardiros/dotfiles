@@ -61,7 +61,7 @@ font:
 draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night Bright)
-colors:
+dark_colors: &dark_colors
   # Default colors
   primary:
     background: '0x2d2d2d'
@@ -138,6 +138,34 @@ colors:
   #
   indexed_colors: []
 
+light_colors: &light_colors
+  # Default colors
+  primary:
+    background: '#ffffef'
+    foreground: '#51606a'
+
+  # Normal colors
+  normal:
+    black:   '#0b141a'
+    red:     '#ff4053'
+    green:   '#11ab00'
+    yellow:  '#bf8c00'
+    blue:    '#0099ff'
+    magenta: '#9854ff'
+    cyan:    '#00a5ab'
+    white:   '#ffffff'
+
+  # Bright colors
+  bright:
+    black:   '#0b141a'
+    red:     '#ff4053'
+    green:   '#11ab00'
+    yellow:  '#bf8c00'
+    blue:    '#0099ff'
+    magenta: '#9854ff'
+    cyan:    '#00a5ab'
+    white:   '#ffffff'
+
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
@@ -169,5 +197,6 @@ bell:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 window:
-  opacity: 0.75
+  opacity: 1.0
 
+colors: *light_colors
