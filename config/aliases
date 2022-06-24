@@ -62,6 +62,7 @@ function dc-ip() {
   done
 }
 
+alias recordmywindow="recordmydesktop --no-sound --windowid \$(xwininfo | grep 'Window id' | awk '{print \$4}')"
 
 alias dotdeb-serve='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
     --name "repository.aptly"\
