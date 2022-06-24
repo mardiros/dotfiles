@@ -64,37 +64,37 @@ function dc-ip() {
 
 alias recordmywindow="recordmydesktop --no-sound --windowid \$(xwininfo | grep 'Window id' | awk '{print \$4}')"
 
-alias dotdeb-serve='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
-    --name "repository.aptly"\
-    -v ${HOME}/workspace/aptly/root:/root \
-    -p 8765:8765 \
-    mardiros/dotdeb \
-    aptly serve -listen=:8765'
+# alias dotdeb-serve='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
+#     --name "repository.aptly"\
+#     -v ${HOME}/workspace/aptly/root:/root \
+#     -p 8765:8765 \
+#     mardiros/dotdeb \
+#     aptly serve -listen=:8765'
 
-alias dotdeb='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
-    --link "repository.aptly:repository.aptly"\
-    -v ${HOME}/workspace/aptly/root:/root \
-    -v $(pwd):/mnt \
-    -v /dev/urandom:/dev/random \
-    -v ${HOME}/workspace/aptly/sources.list.d:/etc/apt/sources.list.d \
-    mardiros/dotdeb'
+# alias dotdeb='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
+#     --link "repository.aptly:repository.aptly"\
+#     -v ${HOME}/workspace/aptly/root:/root \
+#     -v $(pwd):/mnt \
+#     -v /dev/urandom:/dev/random \
+#     -v ${HOME}/workspace/aptly/sources.list.d:/etc/apt/sources.list.d \
+#     mardiros/dotdeb'
 
-alias dotdeb-publish='dotdeb aptly -architectures=amd64 repo add aptly-release *.deb || true && dotdeb aptly publish update wheezy'
+# alias dotdeb-publish='dotdeb aptly -architectures=amd64 repo add aptly-release *.deb || true && dotdeb aptly publish update wheezy'
 
-alias neomutt-dark='ln -s ~/.config/neomutt/color.dark ~/.config/neomutt/color && neomutt'
-alias neomutt-light='ln -s ~/.config/neomutt/color.light ~/.config/neomutt/color && neomutt'
+# alias neomutt-dark='ln -s ~/.config/neomutt/color.dark ~/.config/neomutt/color && neomutt'
+# alias neomutt-light='ln -s ~/.config/neomutt/color.light ~/.config/neomutt/color && neomutt'
 
-function dive() {
-  dive3 || dive2
-}
+# function dive() {
+#   dive3 || dive2
+# }
 
-function dive2() {
-  [[ -e ./venv2 ]] && . ./venv2/bin/activate
-}
+# function dive2() {
+#   [[ -e ./venv2 ]] && . ./venv2/bin/activate
+# }
 
-function dive3() {
-  [[ -e ./venv3 ]] && . ./venv3/bin/activate
-}
+# function dive3() {
+#   [[ -e ./venv3 ]] && . ./venv3/bin/activate
+# }
 
-alias divec='dive && code .'
+# alias divec='dive && code .'
 
