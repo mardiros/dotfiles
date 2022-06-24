@@ -1,2 +1,3 @@
 xrdb ~/.Xresources
 export env TERMINAL=/usr/bin/alacritty
+setxkbmap -option caps:super
