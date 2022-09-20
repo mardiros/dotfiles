@@ -1,62 +1,64 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "files.exclude": {
-        "node_modules/": true,
-        "**/*.pyc": true,
-        "**/__pycache__": true
-    },
-    "editor.rulers": [72, 79, 120],
-    "python.linting.pycodestylePath": "pycodestyle",
-    "python.linting.pycodestyleEnabled":  false,
-    "python.linting.pylintEnabled": false,
-    "python.linting.pylintCategorySeverity.convention": "Information",
-    "python.linting.pylintCategorySeverity.refactor": "Hint",
-    "python.linting.pylintCategorySeverity.warning": "Warning",
-    "python.linting.pylintCategorySeverity.error": "Error",
-    "python.linting.enabled": true,
-    "python.linting.pydocstyleEnabled": false,
-    "python.formatting.provider": "black",
-    "extensions.ignoreRecommendations": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "autoDocstring.docstringFormat": "sphinx",
-    "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust"
-    },
-    "python.pythonPath": "python",
-    "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "basic",
-    "python.sortImports.path": "isort",
-    "[python]": {
-
-        "editor.wordBasedSuggestions": false
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "javascript.format.semicolons": "insert",
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.zoomLevel": 1,
-    "redhat.telemetry.enabled": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ]
+  "files.exclude": {
+    "node_modules/": true,
+    "**/*.pyc": true,
+    "**/__pycache__": true
+  },
+  "editor.rulers": [72, 79, 88],
+  "python.linting.pycodestylePath": "pycodestyle",
+  "python.linting.pylintEnabled": false,
+  "python.linting.pylintCategorySeverity.convention": "Information",
+  "python.linting.pylintCategorySeverity.refactor": "Hint",
+  "python.linting.pylintCategorySeverity.warning": "Warning",
+  "python.linting.pylintCategorySeverity.error": "Error",
+  "python.linting.enabled": false,
+  "python.formatting.provider": "black",
+  "extensions.ignoreRecommendations": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "autoDocstring.docstringFormat": "sphinx",
+  "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.linting.lintOnSave": false,
+  "python.sortImports.path": "isort",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "python.pythonPath": "/bin/python",
+  "python.defaultInterpreterPath": "/bin/python",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.analysis.autoImportCompletions": true,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "workbench.colorTheme": "Default Light+",
+  "window.zoomLevel": 1
 }
