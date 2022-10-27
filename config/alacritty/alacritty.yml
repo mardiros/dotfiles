@@ -199,4 +199,6 @@ bell:
 window:
   opacity: 1.0
 
-colors: *light_colors
+# uncomment one
+#colors: *light_colors
+colors: *dark_colors
