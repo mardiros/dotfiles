@@ -2,7 +2,8 @@
 # add_newline = false
 
 [character]      # The name of the module we are configuring is "character"
-symbol = "𝝿"     # The "symbol" segment is being set to "➜"
+symbol = "[𝝿](bold green)"     # The "symbol" segment is being set to "➜"
+
 
 [directory]
 truncation_length = 4
