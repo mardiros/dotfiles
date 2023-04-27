@@ -6,6 +6,8 @@ sleep .5
 nm-applet &
 sleep .5
 pa-applet &
+sleep .5
+gromit-mpx &
 
 wait
 
