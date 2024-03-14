@@ -46,15 +46,19 @@
     "*.ipynb": "jupyter-notebook"
   },
   "python.pythonPath": "/bin/python",
-  "jenkins.pipeline.linter.connector.url": "https://jenkins.mgt.gandi.net/pipeline-model-converter/validate",
-  "jenkins.pipeline.linter.connector.user": "guillaume.gauvrit",
-  "jenkins.pipeline.linter.connector.pass": "SprootACraqueSonSleep",
   "python.defaultInterpreterPath": "/bin/python",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.analysis.autoImportCompletions": true,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
   "workbench.colorTheme": "Default Light+",
-  "window.zoomLevel": 1,
-  "editor.formatOnSave": true
+  "window.zoomLevel": 1
 }
