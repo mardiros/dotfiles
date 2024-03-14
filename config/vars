@@ -18,7 +18,7 @@ export PATH=$PATH:~/go/bin
 #
 [ -e "$HOME/workspace/git/scripts" ] && export PATH="$PATH:$HOME/workspace/git/scripts"
 
-export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
-export GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
+export GPG_AGENT_INFO="$XDG_RUNTIME_DIR/keyring/gpg:0:1"
 
 [ -e $HOME/.config/vars-local ] &&  . $HOME/.config/vars-local

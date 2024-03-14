@@ -29,7 +29,6 @@ function git-co() {
 
 alias deb-clean='sudo rm -rf debian *.deb && sudo rm -rf build && git checkout debian'
 alias pyc-clean='find . -name "*.pyc" -exec rm -rf {} \;'
-alias fix-ssh-agent='eval $(gnome-keyring-daemon -r) && export SSH_AUTH_SOCK && export GNOME_KEYRING_CONTROL'
 
 alias potage='python setup.py develop && python setup.py extract_messages && python setup.py update_catalog && python setup.py compile_catalog'
 alias pyclean='find . -name "*.pyc" -delete'
