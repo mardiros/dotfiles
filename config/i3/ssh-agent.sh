@@ -1,1 +1,3 @@
-eval $(gnome-keyring-daemon -r) && export SSH_AUTH_SOCK && export GNOME_KEYRING_CONTROL
+# the agent is not gcr and is started using systemd
+# systemctl start --user gcr-ssh-agent.service
+eval $(gnome-keyring-daemon -r) && export GNOME_KEYRING_CONTROL
