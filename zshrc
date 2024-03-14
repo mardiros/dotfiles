@@ -1,7 +1,8 @@
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTFILE=~/.local/histfile
+HISTSIZE=100000
+SAVEHIST=100000
+setopt inc_append_history autocd nomatch notify extended_history
 
 bindkey -v
 
