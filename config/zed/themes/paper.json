@@ -1,0 +1,111 @@
+{
+  "author": "Guillaume Gauvrit",
+  "name": "Papertheme",
+  "themes": [
+    {
+      "name": "Papertheme",
+      "appearance": "light",
+      "style": {
+        "players": [],
+        "background": "#dddddd",
+        "title_bar.background": "#dbd7c9",
+        "toolbar.background": "#dddddd",
+        "tab_bar.background": "#dddddd",
+        "status_bar.background": "#dbd7c9",
+        "panel.background": "#dddddd",
+        "editor.gutter.background": "#dbd7c9",
+        "editor.active_wrap_guide": "#000000",
+        "editor.background": "#F2EEDE",
+        "editor.foreground": "#000000",
+        "element.background": "#dbd7c9",
+        "error": "#CC3E28",
+        "info": "#1E6FCC",
+        "surface.background": "dbd7c9",
+        "status_bar.foreground": "#000000",
+        "tab.active_foreground": "#158C86",
+        "terminal.ansi.amber": "",
+        "terminal.ansi.black": "",
+        "terminal.background": "#F2EEDE",
+        "text": "#0000000",
+        "text.accent": "#dbd7c9",
+        "editor.active_line.background": "#efe9d1",
+        "text.disabled": "#5C21A5",
+        "text.muted": "#555555",
+        "text.placeholder": "#1E6FCC",
+        "warning": "#B58900",
+        "syntax": {
+          "attribute": {
+            "color": "#1E6FCC",
+            "font_style": null,
+            "font_weight": null
+          },
+          "editor.foreground": {
+            "color": "",
+            "font_style": null,
+            "font_weight": null
+          },
+          "boolean": {
+            "color": "#158C86",
+            "font_style": null,
+            "font_weight": 600
+          },
+          "comment": {
+            "color": "#216609",
+            "font_style": null,
+            "font_weight": null
+          },
+          "comment.doc": {
+            "color": "#216609",
+            "font_style": null,
+            "font_weight": null
+          },
+          "constant": {
+            "color": "#0b7dff",
+            "font_style": null,
+            "font_weight": 600
+          },
+          "enum": {
+            "color": "#5C21A5",
+            "font_style": null,
+            "font_weight": 600
+          },
+          "function": {
+            "color": "#a67c00",
+            "font_style": null,
+            "font_weight": 600
+          },
+          "keyword": {
+            "color": "#1E6FCC",
+            "font_style": null,
+            "font_weight": 600
+          },
+          "function.method": {
+            "color": "#a67c00",
+            "font_style": null,
+            "font_weight": 600
+          },
+          "number": {
+            "color": "#5C21A5",
+            "font_style": null,
+            "font_weight": null
+          },
+          "string": {
+            "color": "#CC3E28",
+            "font_style": null,
+            "font_weight": null
+          },
+          "type": {
+            "color": "#158C86",
+            "font_style": null,
+            "font_weight": 600
+          },
+          "variable": {
+            "color": "#00489b",
+            "font_style": null,
+            "font_weight": 600
+          }
+        }
+      }
+    }
+  ]
+}

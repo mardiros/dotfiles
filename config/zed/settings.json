@@ -32,11 +32,10 @@
   "wrap_guides": [88, 120],
   "show_wrap_guides": true,
   "soft_wrap": "none",
-  "preferred_line_length": 88,
 
   "theme": {
     "mode": "system",
-    "light": "Solarized Light",
+    "light": "Papertheme",
     "dark": "One Dark"
   }
 }
