@@ -8,6 +8,7 @@
 // command palette
 {
   "autosave": "off",
+  "format_on_save": "off",
 
   "ui_font_size": 18,
   "ui_font_family": "Zed Plex Sans",
@@ -24,8 +25,7 @@
           "command": "ruff",
           "arguments": ["format", "-"]
         }
-      },
-      "format_on_save": "off"
+      }
     }
   },
 
