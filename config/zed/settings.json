@@ -33,9 +33,16 @@
   "show_wrap_guides": true,
   "soft_wrap": "none",
 
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+
   "theme": {
     "mode": "system",
     "light": "Papertheme",
     "dark": "One Dark"
   }
+
 }
