@@ -43,7 +43,7 @@ alias docker-kill-all='docker kill $(docker ps -q)'
 alias docker-purge='docker rm $(docker ps -a -q)'
 alias docker-purge-i='docker rmi $(docker images -q -f dangling=true)'
 # alias docker-purge-all='docker rmi $(docker images -q)'
-alias docker-clean="docker-kill-all || true && docker-purge" 
+alias docker-clean="docker-kill-all || true && docker-purge"
 alias docker-stats='docker stats $(docker ps -q)'
 
 alias docker-reset='sudo systemctl stop docker && cd /var/lib/docker && sudo btrfs subvolume delete $(sudo btrfs subvolume list /var/lib/docker | awk '"'"'{print $9}'"'"') && sudo rm -rf /var/lib/docker/* && sudo systemctl start docker'
@@ -62,7 +62,37 @@ function dc-ip() {
   done
 }
 
-alias recordmywindow="recordmydesktop --no-sound --windowid \$(xwininfo | grep 'Window id' | awk '{print \$4}')"
+
+function recordmywindow() {
+    xwininfo | {
+        while IFS=: read -r k v; do
+            case "$k" in
+            *"Absolute upper-left X"*) x=$v;;
+            *"Absolute upper-left Y"*) y=$v;;
+            *"Border width"*) bw=$v ;;
+            *"Width"*) w=$v;;
+            *"Height"*) h=$v;;
+            esac
+        done
+
+        # Generate a unique filename
+        base_filename="screenrecord"
+        extension=".mp4"
+        counter=1
+        filename="${base_filename}${extension}"
+        while [[ -e "$filename" ]]; do
+            filename="${base_filename}_${counter}${extension}"
+            ((counter++))
+        done
+        echo "Start recording to $filename in"
+        for i in 3 2 1; do echo "$i"; sleep 1; done
+        ffmpeg  -y -f x11grab -framerate 25 \
+            -video_size "$((w))x$((h))" \
+            -i "+$((x+bw)),$((y+bw))" \
+            -c:v libx264 $filename
+    }
+}
+
 
 # alias dotdeb-serve='docker run -t -i -v ${HOME}/workspace/aptly/repo:/aptly \
 #     --name "repository.aptly"\
@@ -97,4 +127,3 @@ alias recordmywindow="recordmydesktop --no-sound --windowid \$(xwininfo | grep '
 # }
 
 # alias divec='dive && code .'
-
