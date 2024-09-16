@@ -7,6 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2"
+  },
   "autosave": "off",
   "format_on_save": "off",
 
@@ -15,10 +22,16 @@
   "ui_font_weight": 600,
   "buffer_font_size": 20,
   "buffer_font_family": "Cascadia Code",
-  "buffer_font_weight": 400,
+  "buffer_font_fallbacks": ["Noto Sans"],
+  "buffer_font_weight": 600,
   "buffer_line_height": { "custom": 1.3 },
 
   "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
     "Python": {
       "formatter": {
         "external": {
@@ -26,13 +39,25 @@
           "arguments": ["format", "-"]
         }
       }
+    },
+    "reST": {
+      "tab_size": 3
+    },
+    "Jinja2": {
+      "tab_size": 2
     }
   },
+  "file_types": {
+    "C++": ["c"],
+    "Jinja2": ["*.jinja*"],
+    "TOML": ["poetry.lock"],
+    "Dockerfile": ["Dockerfile*"]
+  },
 
-  "wrap_guides": [88, 120],
+  "wrap_guides": [79, 88, 120],
   "show_wrap_guides": true,
-  "soft_wrap": "none",
-
+  "preferred_line_length": 120,
+  "soft_wrap": "preferred_line_length",
   "git": {
     "inline_blame": {
       "enabled": false
@@ -44,5 +69,4 @@
     "light": "Papertheme",
     "dark": "One Dark"
   }
-
 }

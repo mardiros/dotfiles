@@ -6,7 +6,6 @@
       "name": "Papertheme",
       "appearance": "light",
       "style": {
-        "players": [],
         "background": "#dddddd",
         "title_bar.background": "#f2eede",
         "toolbar.background": "#f2eede",
@@ -19,7 +18,10 @@
         "editor.document_highlight.read_background": "#dddddd",
         "editor.active_line.background": "#f6f5f0",
         "editor.foreground": "#000000",
-        "element.background": "#dbd7c9",
+        "element.border": "#5c21a5",
+        "element.hover": "#d3b0ff99",
+        "element.background": "#ccc",
+        "element.selected": "#d3b0ff",
         "modified": "#5C21A5",
         "error": "#cc3e28",
         "info": "#1e6fcc",
@@ -27,7 +29,7 @@
         "search.match_background": "#ffdd77",
         "status_bar.foreground": "#000000",
         "tab.inactive_background": "#fcfcfa",
-        "tab.active_background": "#ffffff",
+        "tab.active_background": "#d3b0ff88",
         "tab.active_foreground": "#5c21a5",
         "terminal.ansi.amber": "",
         "terminal.ansi.black": "",
@@ -37,6 +39,14 @@
         "text.disabled": "#5c21a5",
         "text.muted": "#555555",
         "text.placeholder": "#1e6fcc",
+        "scrollbar_thumb.hover_background": "#5c21a555",
+
+        "scrollbar.thumb.background": "#5c21a555",
+        "scrollbar.thumb.hover_background": "#5c21a5cc",
+        "scrollbar.thumb.border": "#252931",
+        "scrollbar.track.background": "#5c21a533",
+        "scrollbar.track.border": "#5c21a555",
+
         "warning": "#b58900",
         "syntax": {
           "attribute": {
@@ -109,7 +119,14 @@
             "font_style": null,
             "font_weight": 600
           }
-        }
+        },
+        "players": [
+          {
+            "cursor": "#10a793",
+            "background": "#dddddd",
+            "selection": "#d3b0ff99"
+          }
+        ]
       }
     }
   ]
