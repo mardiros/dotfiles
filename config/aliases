@@ -35,6 +35,7 @@ alias pyclean='find . -name "*.pyc" -delete'
 
 alias vi=/bin/nvim
 alias vim=/bin/nvim
+alias zed="rg -q --no-messages poetry pyproject.toml && poetry run zeditor . || zeditor ."
 
 alias docker-compose='docker compose'
 alias dc='docker compose'
