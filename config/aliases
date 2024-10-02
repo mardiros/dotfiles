@@ -89,5 +89,7 @@ function recordmywindow() {
     }
 }
 
-# alias neomutt-dark='ln -s ~/.config/neomutt/color.dark ~/.config/neomutt/color && neomutt'
-# alias neomutt-light='ln -s ~/.config/neomutt/color.light ~/.config/neomutt/color && neomutt'
+alias aladark='ln -sf ~/.config/alacritty/alacritty.toml.dark ~/.config/alacritty/alacritty.toml'
+alias alalight='ln -sf ~/.config/alacritty/alacritty.toml.light ~/.config/alacritty/alacritty.toml'
+# alias neomutt-dark='ln -sf ~/.config/neomutt/color.dark ~/.config/neomutt/color && neomutt'
+# alias neomutt-light='ln -sf ~/.config/neomutt/color.light ~/.config/neomutt/color && neomutt'
