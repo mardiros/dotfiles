@@ -69,7 +69,7 @@ function dc-respawn() {
 function dc-ip() {
   for container in $@; do
     echo -n "$container: "
-    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$(basename $(pwd))_${container}_1"
+    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$(basename $(pwd))-${container}-1"
   done
 }
 
