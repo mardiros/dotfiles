@@ -9,6 +9,9 @@ alias tmux="tmux -2"
 alias nm-applet-i3="i3-msg exec nm-applet"
 
 alias git-clean='git pull --rebase && git pull --prune && git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
+# the git-branch alias is used for the git-open-mr
+alias git-branch='echo ''${$(git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD)#(refs/heads/|tags/)}'''
 alias git-open-mr='git push -u origin $(git-branch)'
 alias fuckme='git pull --rebase && git commit --amend --no-edit && git push -f'
 
