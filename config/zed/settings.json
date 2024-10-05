@@ -60,6 +60,15 @@
     "Dockerfile": ["Dockerfile*"]
   },
 
+  "file_scan_exclusions": [
+      "__pycache__",
+      ".mypy_cache",
+      ".ruff_cache",
+      ".pytest_cache",
+      "htmlcov",
+      ".coverage"
+  ],
+
   "wrap_guides": [79, 88, 120],
   "show_wrap_guides": true,
   "preferred_line_length": 120,
