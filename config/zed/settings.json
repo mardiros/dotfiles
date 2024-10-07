@@ -61,12 +61,14 @@
   },
 
   "file_scan_exclusions": [
-      "__pycache__",
-      ".mypy_cache",
-      ".ruff_cache",
-      ".pytest_cache",
-      "htmlcov",
-      ".coverage"
+    ".git/",
+    "dist/",
+    "__pycache__",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".pytest_cache",
+    "htmlcov",
+    ".coverage"
   ],
 
   "wrap_guides": [79, 88, 120],
