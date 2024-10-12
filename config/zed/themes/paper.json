@@ -22,9 +22,8 @@
         "element.hover": "#d3b0ff99",
         "element.background": "#ccc",
         "element.selected": "#d3b0ff",
-        "modified": "#5C21A5",
+        "modified": "#5c21a5",
         "error": "#cc3e28",
-        "info": "#1e6fcc",
         "surface.background": "#dbd7c9",
         "search.match_background": "#ffdd77",
         "status_bar.foreground": "#000000",
@@ -47,7 +46,14 @@
         "scrollbar.track.background": "#5c21a533",
         "scrollbar.track.border": "#5c21a555",
 
-        "warning": "#b58900",
+        "hint": "#1e6fcc",
+        "hint.background": "#d3b0ff",
+        "info": "#1e6fcc",
+        "info.background": "#d3b0ff",
+        "renamed": "#1e6fcc",
+        "renamed.background": "#d3b0ff",
+
+        "warning": "#ff0000",
         "syntax": {
           "attribute": {
             "color": "#1e6fcc",
