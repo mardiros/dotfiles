@@ -62,6 +62,7 @@
 
   "file_scan_exclusions": [
     ".coverage",
+    ".ropeproject",
     ".git/",
     ".mypy_cache",
     ".pdm-build",
