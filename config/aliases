@@ -22,7 +22,11 @@ zed() {
   if rg -q --no-messages poetry pyproject.toml; then
     poetry run zeditor "$@"
   else
-    zeditor "$@"
+    if rg -q --no-messages pdm-backend pyproject.toml; then
+        uv run zeditor "$@"
+    else
+        zeditor "$@"
+    fi
   fi
 }
 

@@ -15,6 +15,9 @@ export PATH=$PATH:~/go/bin
 # Node
 type fnm > /dev/null && eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines --shell zsh)"
 
+# Python
+type uv > /dev/null && eval "$(uv generate-shell-completion zsh)"
+
 #
 [ -e "$HOME/workspace/git/scripts" ] && export PATH="$PATH:$HOME/workspace/git/scripts"
 

@@ -56,6 +56,10 @@
         "renamed.background": "#d3b0ff",
 
         "warning": "#ff0000",
+
+        "created": "#6f1ecc",
+        "success": "#1e6fcc",
+
         "syntax": {
           "attribute": {
             "color": "#1e6fcc",
