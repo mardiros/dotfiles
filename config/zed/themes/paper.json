@@ -130,7 +130,150 @@
             "color": "#00489b",
             "font_style": null,
             "font_weight": 600
-          }
+          },
+          // Typescript I guess
+          "constructor": {
+            "color": "#5c21a5",
+            "font_style": null,
+            "font_weight": null
+          },
+          // Json
+          "property": {
+            "color": "#5c21a5",
+            "font_style": null,
+            "font_weight": null
+          },
+
+          // Used in markdown
+          "title": {
+            "color": "#6f1ecc",
+            "font_style": null,
+            "font_weight": 700
+          },
+          "emphasis": {
+            "color": "#0f4ace",
+            "font_style": null,
+            "font_weight": null
+          },
+          "emphasis.strong": {
+            "color": "#0f4ace",
+            "font_style": null,
+            "font_weight": 700
+          },
+          "text.literal": {
+            "color": "#1e6fcc",
+            "font_style": null,
+            "font_weight": null
+          },
+          "link_text": {
+            "color": "#0b7dff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "link_uri": {
+            "color": "#5c21a5",
+            "font_style": null,
+            "font_weight": null
+          },          // "embedded": {
+          //   "color": "#8ec07cff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "function.builtin": {
+          //   "color": "#fb4833ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "hint": {
+          //   "color": "#8c957dff",
+          //   "font_style": null,
+          //   "font_weight": 700
+          // },
+          // "label": {
+          //   "color": "#83a598ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "operator": {
+          //   "color": "#8ec07cff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "predictive": {
+          //   "color": "#717363ff",
+          //   "font_style": "italic",
+          //   "font_weight": null
+          // },
+          // "preproc": {
+          //   "color": "#fbf1c7ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "primary": {
+          //   "color": "#ebdbb2ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "punctuation": {
+          //   "color": "#d5c4a1ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "punctuation.bracket": {
+          //   "color": "#a89984ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "punctuation.delimiter": {
+          //   "color": "#e5d5adff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "punctuation.list_marker": {
+          //   "color": "#ebdbb2ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "punctuation.special": {
+          //   "color": "#e5d5adff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "string.escape": {
+          //   "color": "#c6b697ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "string.regex": {
+          //   "color": "#fe7f18ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "string.special": {
+          //   "color": "#d3869bff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "string.special.symbol": {
+          //   "color": "#8ec07cff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "tag": {
+          //   "color": "#8ec07cff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "variable.special": {
+          //   "color": "#83a598ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // },
+          // "variant": {
+          //   "color": "#83a598ff",
+          //   "font_style": null,
+          //   "font_weight": null
+          // }
         },
         "players": [
           {
