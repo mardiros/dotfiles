@@ -21,7 +21,7 @@
         "element.border": "#5c21a5",
         "element.hover": "#d3b0ff99",
         "element.background": "#ccc",
-        "element.selected": "#d3b0ff",
+        "element.selected": "#eadeee",
         "modified": "#5c21a5",
         "error": "#da4646",
         "error.border": "#a52121",
@@ -174,7 +174,8 @@
             "color": "#5c21a5",
             "font_style": null,
             "font_weight": null
-          },          // "embedded": {
+          },
+          // "embedded": {
           //   "color": "#8ec07cff",
           //   "font_style": null,
           //   "font_weight": null
