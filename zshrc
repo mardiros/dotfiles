@@ -21,18 +21,19 @@ bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
 
 bindkey ';5C' emacs-backward-word
-bindkey ';5C' emacs-forward-word 
+bindkey ';5C' emacs-forward-word
 bindkey '^R' history-incremental-search-backward
 
 zstyle :compinstall filename '/home/guillaume/.zshrc'
 
 autoload -U colors && colors
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select=5
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
+autoload -U +X bashcompinit && bashcompinit
+type nomad > /dev/null && complete -o nospace -C /usr/bin/nomad nomad
 
 . ~/.config/git-prompt.zsh
 . ~/.config/aliases
