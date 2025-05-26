@@ -35,7 +35,7 @@ alias dc='docker compose'
 alias dc-images='dc config --services | sort'
 alias docker-kill-all='docker kill $(docker ps -q)'
 alias docker-purge='docker rm $(docker ps -a -q)'
-alias docker-purge-i='docker rmi $(docker images -q -f dangling=true)'
+alias docker-purge-i='docker rmi -f $(docker images -q -f dangling=true)'
 # alias docker-purge-all='docker rmi $(docker images -q)'
 alias docker-clean="docker-kill-all || true && docker-purge"
 alias docker-stats='docker stats $(docker ps -q)'
