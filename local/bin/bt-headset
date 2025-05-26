@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DEVICE_MAC="30:53:C1:77:61:4E"
+
+bluetoothctl <<EOF
+power on
+agent on
+default-agent
+trust $DEVICE_MAC
+pair $DEVICE_MAC
+connect $DEVICE_MAC
+EOF
