@@ -1,9 +1,6 @@
 alias watch='watch '
 alias ls='ls --color=auto'
-alias grep='grep --color=always --exclude-dir=\*.svn\*'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias nose='nosetests -sxv --with-doctest'
+alias grep='grep --color=always'
 alias is='ssh -l root'
 alias tmux="tmux -2"
 alias nm-applet-i3="i3-msg exec nm-applet"
