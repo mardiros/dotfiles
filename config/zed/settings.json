@@ -15,7 +15,6 @@
       "provider": "mistral",
       "model": "mistral-large-latest"
     },
-    "version": "2"
   },
   "autosave": "off",
   "format_on_save": "off",
@@ -69,6 +68,7 @@
     ".pdm-python",
     ".pytest_cache",
     ".ruff_cache",
+    ".ropeproject",
     "__pycache__",
     "dist/",
     "htmlcov"
