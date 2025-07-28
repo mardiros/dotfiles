@@ -11,6 +11,4 @@ VENV="$VENVDIR/$VENVNAME"
 
 python -m venv $VENVDIR/$VENVNAME
 
-.  $VENV/bin/activate
-pip install -U setuptools pip pycodestyle pylint black pydocstyle doc8
 ln -s $VENV $WORKINGDIR/venv3
