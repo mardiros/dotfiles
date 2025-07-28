@@ -21,10 +21,10 @@
   "format_on_save": "off",
   "when_closing_with_no_tabs": "close_window",
 
-  "ui_font_size": 18,
+  "ui_font_size": 13,
   "ui_font_family": "Zed Plex Sans",
   "ui_font_weight": 600,
-  "buffer_font_size": 20,
+  "buffer_font_size": 13,
   "buffer_font_family": "Cascadia Code",
   "buffer_font_fallbacks": ["Noto Sans"],
   "buffer_font_weight": 600,
