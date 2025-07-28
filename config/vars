@@ -17,6 +17,7 @@ type fnm > /dev/null && eval "$(fnm env --use-on-cd --version-file-strategy=recu
 
 # Python
 type uv > /dev/null && eval "$(uv generate-shell-completion zsh)"
+UV_PYTHON_PREFERENCE=system
 
 #
 [ -e "$HOME/workspace/git/scripts" ] && export PATH="$PATH:$HOME/workspace/git/scripts"
