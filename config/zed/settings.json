@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "enable_language_server": false,
+  "collaboration_panel": {
+    "dock": "right"
+  },
   "features": {
     "edit_prediction_provider": "none"
   },
@@ -14,21 +18,24 @@
     "default_model": {
       "provider": "mistral",
       "model": "mistral-large-latest"
-    },
+    }
   },
   "autosave": "off",
   "format_on_save": "off",
   "when_closing_with_no_tabs": "close_window",
+  "show_completions_on_input": false,
+  "use_auto_surround": false,
 
-  "ui_font_size": 13,
+  "ui_font_size": 12,
   "ui_font_family": "Zed Plex Sans",
   "ui_font_weight": 600,
-  "buffer_font_size": 13,
+  "buffer_font_size": 12,
   "buffer_font_family": "Cascadia Code",
   "buffer_font_fallbacks": ["Noto Sans"],
   "buffer_font_weight": 600,
   "buffer_line_height": { "custom": 1.3 },
 
+  "use_on_type_format": false,
   "use_autoclose": false,
 
   "languages": {
