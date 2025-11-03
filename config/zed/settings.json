@@ -23,7 +23,7 @@
   "autosave": "off",
   "format_on_save": "off",
   "when_closing_with_no_tabs": "close_window",
-  "show_completions_on_input": false,
+  "show_completions_on_input": true,
   "use_auto_surround": false,
 
   "ui_font_size": 12,
@@ -45,6 +45,7 @@
       }
     },
     "Python": {
+      "enable_language_server": true,
       "formatter": {
         "external": {
           "command": "ruff",
