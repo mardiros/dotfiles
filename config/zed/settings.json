@@ -44,6 +44,12 @@
         "source.fixAll.eslint": true
       }
     },
+    "TypeScript": {
+      "enable_language_server": true,
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
     "Python": {
       "enable_language_server": true,
       "formatter": {
