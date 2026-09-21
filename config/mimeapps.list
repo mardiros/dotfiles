@@ -1,11 +1,11 @@
 [Default Applications]
 application/graphql=dev.zed.Zed.desktop
 application/ics=mutt-ics.desktop
+application/ics=mutt-ics.desktop
 application/javascript=dev.zed.Zed.desktop
-application/javascript=dev.zed.Zed.desktop
-application/json=dev.zed.Zed.desktop
 application/json=dev.zed.Zed.desktop
 application/ld+json=dev.zed.Zed.desktop
+application/msword=libreoffice-writer.desktop
 application/msword=libreoffice-writer.desktop
 application/pdf=org.gnome.Evince.desktop
 application/sql=dev.zed.Zed.desktop
@@ -60,4 +60,6 @@ text/csv=libreoffice-calc.desktop;
 video/quicktime=firefox.desktop;
 image/png=feh.desktop;
 image/jpeg=feh.desktop;
-application/x-shellscript=code.desktop;
+application/x-shellscript=dev.zed.Zed.desktop;
+application/x-zerosize=dev.zed.Zed.desktop;
+video/mp4=firefox.desktop;
