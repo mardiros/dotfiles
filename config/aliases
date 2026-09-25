@@ -16,14 +16,17 @@ alias vi=/bin/nvim
 alias vim=/bin/nvim
 
 zed() {
-  if rg -q --no-messages poetry pyproject.toml; then
-    poetry run zeditor -r "$@"
+  local -a editor
+  editor=(zeditor)
+
+  if [ -f pyproject.toml ]; then
+    editor=(uv run zeditor)
+  fi
+
+  if [ -d "$1" ]; then
+     "${editor[@]}" -r "$@"
   else
-    if rg -q --no-messages pdm-backend pyproject.toml; then
-        uv run zeditor -r "$@"
-    else
-        zeditor -r "$@"
-    fi
+     "${editor[@]}" -e "$@"
   fi
 }
 
